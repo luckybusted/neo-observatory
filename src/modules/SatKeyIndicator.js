@@ -9,10 +9,11 @@ class SatKeyIndicator extends Component {
     render() {
 
         const showSpinner = this.props.showSpinner;
+        const satellites = this.props.satellites;
 
         let keyindicator = [];
 
-        if (!showSpinner) {
+        if (!showSpinner && satellites.length) {
             keyindicator = [
                 <span key={uuidv4()} className="tinyDescription col-12">Satelliten im Orbit der Erde</span>,
                 <div key={uuidv4()} className="col-9">

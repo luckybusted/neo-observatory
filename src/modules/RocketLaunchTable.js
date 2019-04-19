@@ -9,10 +9,11 @@ class RocketLaunchTable extends Component {
     render() {
 
         const showSpinner = this.props.showSpinner;
+        const launchesLength = this.props.launches.length;
 
         let launches = [];
 
-        if(!showSpinner){
+        if(!showSpinner && launchesLength){
 
             launches = this.props.launches.map((value, i, values) => [
 
