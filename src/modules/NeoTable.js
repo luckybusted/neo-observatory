@@ -5,10 +5,6 @@ let actions = require('../actions/actions');
 let ReactRedux = require('react-redux');
 
 class NeoTable extends Component {
-    constructor(){
-        super();
-    }
-
 
     render(){
 

@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-let ReactRedux = require('react-redux');
-
 class ErrorPage extends Component {
 
     componentDidMount(){}

@@ -1,7 +1,4 @@
-import React from 'react';
 import {combineReducers} from 'redux';
-
-
 import dataReducer from './dataReducer';
 
 

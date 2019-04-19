@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 
-let actions = require('../actions/actions');
 let ReactRedux = require('react-redux');
-
-// require('../scripts/main.js');
-// require('!style-loader!css-loader!sass-loader!../styles/main.scss');
 
 class Satellites extends Component {
 

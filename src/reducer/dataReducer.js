@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
     REQUEST_DATA,
     REQUEST_SATELLITES,
@@ -13,7 +11,7 @@ import {
     RECEIVED_SATELLITES
 } from '../actions/action-types';
 
-const api = require('../utils/api');
+//const api = require('../utils/api');
 
 const initialState = {
     apiData: {},
@@ -32,7 +30,7 @@ const initialState = {
     productData: {},
 };
 
-function getApiData(data) {
+/* function getApiData(data) {
 
     const apiData = {};
     let neos = data.data.near_earth_objects;
@@ -48,7 +46,7 @@ function getApiData(data) {
 
 function parseSats(data) {
     console.log(data);
-}
+} */
 
 function getNeos(data) {
     let neos = [];

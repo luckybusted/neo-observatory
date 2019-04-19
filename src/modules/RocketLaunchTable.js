@@ -5,9 +5,6 @@ let ReactRedux = require('react-redux');
 let moment = require('moment');
 
 class RocketLaunchTable extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
 

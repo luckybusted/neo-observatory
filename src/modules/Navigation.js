@@ -1,17 +1,9 @@
 import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom'
 
-let actions = require('../actions/actions');
 let ReactRedux = require('react-redux');
 
 class Navigation extends Component {
-    constructor(){
-        super();
-    }
-
-    componentDidMount(){
-
-    }
 
     render(){
 

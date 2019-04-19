@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 import axios from 'axios';
-import {oAuth, stLogin} from './oAuth';
+import {oAuth} from './oAuth';
 
 
 let api = {
@@ -8,10 +8,10 @@ let api = {
     getNeoData(params) {
 
         let urlBase = 'https://api.nasa.gov/neo',
-            stats = '/rest/v1/stats', //Get the Near Earth Object data set totals
-            feed = '/rest/v1/feed', //Find Near Earth Objects by date (/today for today)
-            neo = '/rest/v1/neo/browse', // Browse the Near Earth Objects service (ID instead of browse to find a NEO)
-            urlParams = '';
+            //stats = '/rest/v1/stats', //Get the Near Earth Object data set totals
+            feed = '/rest/v1/feed'; //Find Near Earth Objects by date (/today for today)
+            //neo = '/rest/v1/neo/browse', // Browse the Near Earth Objects service (ID instead of browse to find a NEO)
+            //urlParams = '';
 
         const dataUrl = '';
         const url = urlBase + feed +'/today?api_key=' + oAuth;

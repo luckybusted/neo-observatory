@@ -9,9 +9,6 @@ import Home from '../containers/Home'
 
 import MainLayout from './MainLayout.js';
 
-let ReactRedux = require('react-redux');
-let actions = require('../actions/actions');
-
 class SubRoot extends Component {
     constructor(props) {
         super(props);
@@ -19,12 +16,6 @@ class SubRoot extends Component {
             props: props,
             params: props.match
         };
-    }
-
-    componentWillMount() {
-
-
-
     }
 
     render() {
