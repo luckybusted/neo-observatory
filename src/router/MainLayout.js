@@ -19,9 +19,11 @@ class MainLayout extends Component {
     render() {
 
         return [
-            <Navigation/>,
-                this.props.children,
-            <Footer/>
+            <Navigation key={'navigation'}/>,
+            <div className={'main-content'} key={'mainContent'}>
+                {this.props.children}
+            </div>,
+            <Footer key={'footer'}/>
         ];
     }
 }

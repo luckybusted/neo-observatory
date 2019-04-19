@@ -16,7 +16,7 @@ class RocketLaunchTable extends Component {
 
             launches = this.props.launches.map((value, i, values) => [
 
-                <tr>
+                <tr key={'launch-' + i}>
                     <td>{value.lsp.abbrev}</td>
                     <td>{value.name}</td>
                     <td>{moment(value.isostart).format('DD.MM.YYYY hh:mm')}</td>
