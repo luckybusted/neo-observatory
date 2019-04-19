@@ -1,0 +1,12 @@
+.table {
+  tbody tr:nth-child(odd){
+    background-color: #414141;
+  }
+  th, td {
+    font-size: .9rem;
+    border: none;
+  }
+  thead th {
+    font-size: 1rem;
+  }
+}
