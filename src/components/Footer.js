@@ -10,10 +10,12 @@ class Footer extends Component {
 
     render() {
 
+        let year = new Date().getFullYear();
+
         return (
             <main>
                 <div className="container">
-                    &copy; 2019 Ivan Ushmorov
+                    &copy; {year} Ivan Ushmorov
                 </div>
             </main>
         )
