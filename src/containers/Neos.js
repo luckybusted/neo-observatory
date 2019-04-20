@@ -25,6 +25,7 @@ class Neos extends Component {
 }
 
 export default ReactRedux.connect(
+    null,
     (dispatch) => (
         {
             getNeoStats: (params) => dispatch(actions.getNeoStats(params))
