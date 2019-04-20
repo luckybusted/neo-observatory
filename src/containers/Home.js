@@ -10,7 +10,6 @@ class Home extends Component {
 
     componentDidMount(){
         this.props.getNeoStats();
-        this.props.getRocketStats();
         this.props.getSatStats();
     }
 
@@ -22,7 +21,7 @@ class Home extends Component {
                 <div className="container">
                         <NeoKeyIndicator/>
                         <SatKeyIndicator/>
-                        <RocketLaunchTable/>
+                        <RocketLaunchTable count={5}/>
                 </div>
             </main>
         );
@@ -36,7 +35,6 @@ export default ReactRedux.connect(
     ,
     (dispatch) => (
         {
-            getRocketStats: (params) => dispatch(actions.getRocketStats(params)),
             getNeoStats: (params) => dispatch(actions.getNeoStats(params)),
             getSatStats: (params) => dispatch(actions.getSatStats(params))
         }

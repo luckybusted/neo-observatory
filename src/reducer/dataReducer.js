@@ -110,6 +110,10 @@ const dataReducer = (state = initialState, action) => {
             return {
                 ...state,
                 launches: action.data.data.launches,
+                showSpinner: {
+                    ...state.showSpinner,
+                    rocket: false
+                }
             };
 
         case RECEIVED_SATELLITES:

@@ -6,10 +6,17 @@ let moment = require('moment');
 
 class RocketLaunchTable extends Component {
 
+    componentWillMount(){
+        this.props.getRocketStats(this.props.count);
+    }
+
     render() {
 
         const showSpinner = this.props.showSpinner;
         const launchesLength = this.props.launches.length;
+
+        console.log('SHOW SPINNER', showSpinner);
+        console.log('LAUNCHES', launchesLength);
 
         let launches = [];
 
@@ -24,8 +31,6 @@ class RocketLaunchTable extends Component {
                 </tr>
 
             ]);
-        } else {
-            return <tr><td>LOADING...</td></tr>
         }
 
         return (

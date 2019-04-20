@@ -45,11 +45,11 @@ let api = {
 
     },
 
-    getRocketData(){
+    getRocketData(count){
 
         let urlBase = 'https://launchlibrary.net/1.3/';
 
-        return axios.get(urlBase + 'launch/next/5')
+        return axios.get(urlBase + 'launch/next/' + count)
             .then((response) => {
                 return response;
             })

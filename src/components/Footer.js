@@ -15,7 +15,7 @@ class Footer extends Component {
         return (
             <main>
                 <div className="container">
-                    &copy; {year} Ivan Ushmorov
+                    &copy; {year} by Ivan Ushmorov
                 </div>
             </main>
         )

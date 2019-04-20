@@ -27,10 +27,10 @@ export function getNeoStats(){
         };
     }
 
-export function getRocketStats(){
+export function getRocketStats(count){
         return (dispatch) => {
             dispatch({type: REQUEST_LAUNCHES});
-            api.getRocketData()
+            api.getRocketData(count)
 
                 .then(
                     (data) => dispatch({type: RECEIVED_LAUNCHES, data: data}))

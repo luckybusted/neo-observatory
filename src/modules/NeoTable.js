@@ -11,7 +11,7 @@ class NeoTable extends Component {
         const showSpinner = this.props.showSpinner;
 
         return (
-            <div>
+            <div className={'col-12'}>
                 {showSpinner &&
                 <div>Loading...</div>
                 }
