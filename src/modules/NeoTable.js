@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Neo from '../components/Neo';
+import Loader from '../components/Loader';
 
 let actions = require('../actions/actions');
 let ReactRedux = require('react-redux');
@@ -13,10 +14,11 @@ class NeoTable extends Component {
         return (
             <div className={'col-12'}>
                 {showSpinner &&
-                <div>Loading...</div>
+                    <Loader/>
                 }
                 {!showSpinner &&
                 <div>
+
                     <Neo data={this.props.neos}/>
                 </div>
                 }
