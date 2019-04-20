@@ -24,16 +24,18 @@ class RocketLaunchTable extends Component {
                 </tr>
 
             ]);
+        } else {
+            return <tr><td>LOADING...</td></tr>
         }
 
         return (
             <div className="row">
-                <span className="tinyDescription col-12">Nächste Raketenstarts</span>
+                <span className="tinyDescription col-12">Upcoming rocket launches</span>
                 <table className="table">
                     <thead>
                         <tr>
                             <th scope="col">Agency</th>
-                            <th scope="col">Rakete</th>
+                            <th scope="col">Rocket</th>
                             <th scope="col">Lift Off</th>
                         </tr>
                     </thead>

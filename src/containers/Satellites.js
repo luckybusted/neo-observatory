@@ -10,7 +10,7 @@ class Satellites extends Component {
     render() {
         return (
 
-            <div>
+            <div className={'container'}>
                 <ul>
                     <li>Communications: 742 satellites</li>
                     <li>Earth observation: 596 satellites</li>
