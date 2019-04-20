@@ -8,8 +8,7 @@ class Navigation extends Component {
     render(){
 
         return (
-            // todo: make NAVLinks
-            <header className="navbar navbar-expand flex-column flex-md-row">
+            <header className="container pb-5 pt-4 navbar navbar-expand flex-column flex-md-row justify-content-between">
                 <NavLink className="logo navbar-brand" to="/">NEO</NavLink>
                 <ul className="navbar-nav">
                     <li className="nav-item">
