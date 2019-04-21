@@ -14,10 +14,12 @@ class SatKeyIndicator extends Component {
         let keyindicator = [];
 
         if (!showSpinner && satellites.length) {
+
+            let satLength = satellites.length;
             keyindicator = [
                 <span key={uuidv4()} className="tinyDescription col-12">Satelliten im Orbit der Erde</span>,
                 <div key={uuidv4()} className="col-9">
-                    <p className="ki">{this.props.satellites[99].all['0'].orbit}</p>
+                    <p className="ki">{this.props.satellites[satLength - 1].all['0'].orbit}</p>
                 </div>,
                 <div key={uuidv4()} className="col-3">
                     <a className="btn" href="/satellites/">mehr</a>
