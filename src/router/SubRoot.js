@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 
 import Neos from '../containers/Neos';
 import Satellites from '../containers/Satellites';
+import Imprint from '../containers/Impressum';
 import Rockets from '../containers/Rockets';
 import ErrorPage from '../containers/ErrorPage';
 import Home from '../containers/Home'
@@ -32,6 +33,8 @@ class SubRoot extends Component {
                                component={Satellites}/>
                         <Route path="/rockets/"
                                component={Rockets}/>
+                    <Route path="/imprint/"
+                           component={Imprint}/>
                         <Route path="*"
                                component={ErrorPage}/>
 
