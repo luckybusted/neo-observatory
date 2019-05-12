@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
+
 let ReactRedux = require('react-redux');
 
 class Footer extends Component {
@@ -14,16 +15,16 @@ class Footer extends Component {
         let year = new Date().getFullYear();
 
         return (
-            <main>
-                <div className="container d-flex flex-column flex-md-row justify-content-between">
-                    <div>
+
+            <div className="footer container d-flex flex-column flex-md-row justify-content-between">
+                <div>
                     &copy; {year} by Ivan Ushmorov
-                    </div>
-                    <div>
-                        <NavLink activeClassName='active' className='nav-link' to='/imprint/'>Impressum</NavLink>
-                    </div>
                 </div>
-            </main>
+                <div>
+                    <NavLink activeClassName='active' to='/imprint/'>Impressum</NavLink>
+                </div>
+            </div>
+
         )
     }
 
