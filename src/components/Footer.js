@@ -15,7 +15,7 @@ class Footer extends Component {
 
         return (
             <main>
-                <div className="container flex-column flex-md-row justify-content-between">
+                <div className="container d-flex flex-column flex-md-row justify-content-between">
                     <div>
                     &copy; {year} by Ivan Ushmorov
                     </div>

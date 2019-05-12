@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { NavLink } from 'react-router-dom'
 
 const uuidv4 = require('uuid/v4');
 let actions = require('../actions/actions');
@@ -17,12 +18,12 @@ class SatKeyIndicator extends Component {
 
             let satLength = satellites.length;
             keyindicator = [
-                <span key={uuidv4()} className="tinyDescription col-12">Satelliten im Orbit der Erde</span>,
+                <span key={uuidv4()} className="tinyDescription col-12">Satellites in earth orbit</span>,
                 <div key={uuidv4()} className="col-9">
                     <p className="ki">{this.props.satellites[satLength - 1].all['0'].orbit}</p>
                 </div>,
                 <div key={uuidv4()} className="col-3">
-                    <a className="btn" href="/satellites/">mehr</a>
+                    <NavLink className="btn" to="/satellites/">more</NavLink>
                 </div>
             ];
         }

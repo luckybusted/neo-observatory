@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { NavLink } from 'react-router-dom'
 
 const uuidv4 = require('uuid/v4');
 let actions = require('../actions/actions');
@@ -14,12 +15,12 @@ class NeoKeyIndicator extends Component {
 
         if (!showSpinner) {
             keyindicator = [
-                <span key={uuidv4()} className="tinyDescription col-12">Erdnahe Objekte heute</span>,
+                <span key={uuidv4()} className="tinyDescription col-12">Near earth objects today</span>,
                 <div key={uuidv4()} className="col-9">
                     <p className="ki">{this.props.neosCount}</p>
                 </div>,
                 <div key={uuidv4()} className="col-3">
-                    <a className="btn" href="/neos/">mehr</a>
+                    <NavLink className="btn" to="/neos/">more</NavLink>
                 </div>
             ];
         }
@@ -28,8 +29,6 @@ class NeoKeyIndicator extends Component {
             <div className="row keyIndicator">
                 {keyindicator}
             </div>
-
-
 
 
 
